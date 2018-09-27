@@ -1,0 +1,25 @@
+{
+  "name": "kristinjgumbert",
+  "version": "1.0.0",
+  "description": "6.21.18 portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjgum/kristinjgumbert.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjgum/kristinjgumbert/issues"
+  },
+  "homepage": "https://github.com/kjgum/kristinjgumbert#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {}
+}
