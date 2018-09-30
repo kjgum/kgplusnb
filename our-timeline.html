@@ -46,10 +46,15 @@
 
 body {
   overflow-x: hidden;
+  background-image: url('images/index.jpg');
+      background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
 }
 
 .timeline ul {
-  color:#fff;
+  color:#000;
   padding: 50px 0;
 }
 
@@ -60,7 +65,7 @@ body {
   margin: 0 auto;
   padding-top: 50px;
   height: 100%;
-  background: #a8a8a8;
+  background: #fcfcfc;
 }
 
 .timeline ul li::after {
@@ -80,7 +85,7 @@ body {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #909090;
+  background: #f7f7f7;
 }
 
 .timeline ul li div::before {
@@ -99,17 +104,22 @@ body {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #909090 transparent transparent;
+  border-color: transparent #f7f7f7 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
   left: -439px;
 }
 
+.timeline img {
+  width: 100%;
+  padding: 20px 0 0 0;
+}
+
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #909090;
+  border-color: transparent transparent transparent #f7f7f7;
 }
 
 time {
@@ -128,7 +138,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-  background: #909090;
+  background: #f7f7f7;
 }
 
 .timeline ul li div {
@@ -194,14 +204,16 @@ time {
                 <div class="row">
                     <div class="col-md-12">
                         <ul>
-                            <li><a href="/home">Home</a></li>
-                            <li><a href="/the-details">the details</a></li>
-                            <li><a href="/where-to-stay">where to stay</a></li>
-                            <li><a href="/getting-there">getting there</a></li>
-                            <li><a href="/what-to-do-in-ap">what to do in ap</a></li>
-                            <li><a href="/registry">registry</a></li>
+                                                        <li><a href="/home">Home</a></li>
+                            <li><a href="/engagement-party">engagement party</a>
+                            <!-- <li><a href="/the-details">the details</a></li> -->
+                            <!-- <li><a href="/where-to-stay">where to stay</a></li> -->
+                            <!-- <li><a href="/getting-there">getting there</a></li> -->
+                            <!-- <li><a href="/things-to-do-in-ap">things to do in ap</a></li> -->
                             <li><a href="/our-timeline">our timeline</a></li>
-                            <li><a href="/rsvp">rsvp</a></li>
+                            <li><a href="/registry">registry</a></li>
+                            
+                            <!-- <li><a href="/rsvp">rsvp</a></li> -->
 
                         </ul>
                     </div>
@@ -235,11 +247,13 @@ time {
                             <div>
                                 <time>july 2013</time> 
                                 started working together in the kitchen at eno terra in kingston, nj
+                                <!-- <br><br> -->
+                                <img src="https://via.placeholder.com/350x150">
                             </div>
                         </li>
                         <li>
                             <div>
-                                <time>13 december 2013</time> 
+                                <time>december 13, 2013</time> 
                                 officially started dating
                             </div>
                         </li>
@@ -275,15 +289,15 @@ time {
                         </li>
                         <li>
                             <div>
-                                <time>26 september 2018</time> 
-                                went to see borns at radio city and we both said yes
+                                <time>september 27, 2018</time> 
+                                went to see a concert at radio city and we both said yes
                             </div>
                         </li>
 
                         <li>
                             <div>
-                                <time>23 october 2020</time> 
-                                wedding day
+                                <time>october 23, 2020</time> 
+                                wedding day - yes that's right, we set the date! stay tuned for save the dates and formal invitations!
                             </div>
                         </li>
                         
