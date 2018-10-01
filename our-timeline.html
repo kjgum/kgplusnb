@@ -127,6 +127,7 @@ time {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 
@@ -227,9 +228,9 @@ time {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="colorlib-navbar-brand">
-                            <a class="colorlib-logo" href="/home">KG + NB • our timeline</a>
+                            <a class="colorlib-logo" href="/home">our timeline</a>
                         </div>
-                        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i>menu</i></a>
+                        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
                     </div>
                 </div>
             </div>
@@ -246,58 +247,75 @@ time {
                         <li>
                             <div>
                                 <time>july 2013</time> 
-                                started working together in the kitchen at eno terra in kingston, nj
+                                In the summer of 2013, Kristin started working at Eno Terra in Kingston, NJ as a line cook. While there, she met Natalie. 
                                 <!-- <br><br> -->
-                                <img src="https://via.placeholder.com/350x150">
+                                <img src="images/timeline/eno.jpg">
                             </div>
                         </li>
                         <li>
                             <div>
                                 <time>december 13, 2013</time> 
-                                officially started dating
+                                On this day, we formally started dating.
+                                <img src="images/timeline/dating.jpg">
                             </div>
                         </li>
                         <li>
                             <div>
                                 <time>april 2014</time> 
-                                added our schnoodle madison to the mix
+                                Madison was born on 2-23-14. We adopted her into our life in April.
+                                <img src="images/timeline/madison.jpg">
                             </div>
                         </li>
                         <li>
                             <div>
                                 <time>october 2014</time> 
-                                took our first official vacation to disney's food and wine fest
+                                We took our first official vacation to Disney's Food and Wine Fest.
+                                <img src="images/timeline/disney.jpg">
                             </div>
                         </li>
                         <li>
                             <div>
-                                <time>october 2015</time> 
-                                added our second schnoole margo to the family
+                                <time>december 2015</time> 
+                                Margo was born on 10-23-15. We adopted her into our little family a few days before Christmas. 
+                                <img src="images/timeline/margo.jpg">
                             </div>
                         </li>
                         <li>
                             <div>
                                 <time>february 2016</time> 
-                                ate and drank our way through san franscisco and napa california
+                                We spent a little over a week in California exploring San Franscisco and Napa.
+                                <img src="images/timeline/california.jpg">
                             </div>
                         </li>
                         <li>
                             <div>
                                 <time>february 2017</time> 
-                                went to austin texas
+                                We spent almost two weeks in Austin, TX eating breakfast burritos, bbq, and craft brewery hopping.
+                                <img src="images/timeline/texas.jpg">
                             </div>
                         </li>
                         <li>
                             <div>
                                 <time>september 27, 2018</time> 
-                                went to see a concert at radio city and we both said yes
+                                Kristin got Natalie an early birthday gift to see a show at Radio City Music Hall. It was a surprise turn of events and we walked out engaged.
+                                <img src="images/timeline/borns.jpg">
                             </div>
                         </li>
 
                         <li>
                             <div>
                                 <time>october 23, 2020</time> 
-                                wedding day - yes that's right, we set the date! stay tuned for save the dates and formal invitations!
+                                It's the big day - yes that's right, the date is set! It's only
+                                <span id="date-countdown" style="color:#000; font-size:16px;"> days to go</span>
+                                <img src="images/timeline/wedding.jpg">
+                            </div>
+                        </li>
+
+                        <li>
+                            <div>
+                                <time>the future</time> 
+                                We're unsure what it holds but it definitely doesn't stop here. 
+                                <!-- <img src="images/timeline/wedding.jpg"> -->
                             </div>
                         </li>
                         
@@ -356,6 +374,19 @@ time {
   window.addEventListener("scroll", callbackFunc);
 
 })();
+
+    </script>
+
+        <script>
+        
+        var dateTimeElement= document.getElementById('date-countdown'); 
+
+var date1 = new Date();
+ var date2 = new Date('10/23/2020');
+ var timeDiff = Math.abs(date2.getTime() - date1.getTime()) / (1000*60*60*24); 
+
+timeDiff= Math.round(timeDiff); 
+dateTimeElement.innerHTML = `${timeDiff} days to go!`;
 
     </script>
 </body>

@@ -76,7 +76,7 @@
                         <div class="colorlib-navbar-brand">
                             <a class="colorlib-logo" href="/">KG + NB</a>
                         </div>
-                        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i>menu</i></a>
+                        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                                                 <span class="title">Welcome</span>
                                                 <h2 class="about-head">Hello!</h2>
                                                 <!-- <p><strong>10.23.20</strong></p> -->
-                                                <p>We’ve created this page to help keep everyone up to date with the latest developments leading up to our wedding day. We also thought it would be nice to add some photos and a timeline of our relationship together.</p>
+                                                <p>We’ve created this page to help keep everyone up to date with the latest developments leading up to our wedding day. We also thought it would be nice to share a few photos and a timeline of our relationship together.</p>
 
                                                 <p>We hope this page provides you with all the information you will need to come and enjoy our special day with us. But, if there is anything specific you are unsure of please give either of us a call or email and (hopefully) we will have the answer for you!</p>
 
@@ -134,7 +134,7 @@
                                               
                                                 </p>
 
-  
+  <!-- <span class="title" id="date-countdown">days to go</span> -->
                                             </div>
                                         </div>
                                     </div>
@@ -163,53 +163,20 @@
     <!-- Main JS (Do not remove) -->
     <script src="js/main.js"></script>
 
-    <!-- countdown -->
-    <script type="text/javascript">
-        var deadline = 'October 23 2020';
-initializeClock('clockdiv', deadline);
-console.log(deadline);
-// var deadline = new Date(Date.now() + 15 * 24 * 60 * 60 * 1000);
+    <script>
+        
+        var dateTimeElement= document.getElementById('date-countdown'); 
 
-function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.now();
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
+var date1 = new Date();
+ var date2 = new Date('10/23/2020');
+ var timeDiff = Math.abs(date2.getTime() - date1.getTime()) / (1000*60*60*24); 
 
-// time date countdown
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
+timeDiff= Math.round(timeDiff); 
+dateTimeElement.innerHTML = `${timeDiff} Days to go`;
 
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
-
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
-
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
-}
     </script>
+
+    
 </body>
 
 </html>
