@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>kg+nb</title>
+    <title>Kristin&Natalie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -65,7 +65,45 @@
                         <div class="work-desc">
 
 <h2>Please enter the password</h2>
-<p><input type="text" class="form-control" style="margin-bottom: 5px;"> <a href="/home" class="btn-preview">Submit</a></p>
+
+
+<script type = "text/javascript">
+
+
+
+// var count = 2;
+function validate() {
+// var un = document.myform.username.value;
+var pw = document.myform.pword.value;
+
+
+if (pw == "noodles") {
+// alert ("Login was successful");
+window.location = "/home";
+// return false;
+}
+else {
+    alert ("please try again.");
+    window.location = "/";
+}
+
+}
+
+</script>
+
+<form name = "myform">
+<p>
+<input name="pword" type="password" class="form-control" style="margin-bottom: 5px;"> 
+<a class="btn-preview" type="submit" onclick= "validate()">Submit</a></p>
+
+
+<!-- <input type="password" name="pword">
+<input type="button"  name="Submit" onclick= "validate()">
+ -->
+</form>
+
+
+
                         </div>
                     </div>
                 </div>
