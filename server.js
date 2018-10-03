@@ -26,21 +26,21 @@ app.get('/engagement-party', function(req, res) {
     res.sendFile(path.join(__dirname, 'engagement-party.html'));
 })
 
-app.get('/the-details', function(req, res) {
-    res.sendFile(path.join(__dirname, 'the-details.html'));
-})
+// app.get('/the-details', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'the-details.html'));
+// })
 
-app.get('/where-to-stay', function(req, res) {
-    res.sendFile(path.join(__dirname, 'where-to-stay.html'));
-})
+// app.get('/where-to-stay', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'where-to-stay.html'));
+// })
 
-app.get('/getting-there', function(req, res) {
-    res.sendFile(path.join(__dirname, 'getting-there.html'));
-})
+// app.get('/getting-there', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'getting-there.html'));
+// })
 
-app.get('/what-to-do-in-ap', function(req, res) {
-    res.sendFile(path.join(__dirname, 'what-to-do-in-ap.html'));
-})
+// app.get('/what-to-do-in-ap', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'what-to-do-in-ap.html'));
+// })
 
 app.get('/registry', function(req, res) {
     res.sendFile(path.join(__dirname, 'registry.html'));
@@ -50,13 +50,13 @@ app.get('/our-timeline', function(req, res) {
     res.sendFile(path.join(__dirname, 'our-timeline.html'));
 })
 
-app.get('/rsvp', function(req, res) {
-    res.sendFile(path.join(__dirname, 'rsvp.html'));
-})
+// app.get('/rsvp', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'rsvp.html'));
+// })
 
-app.get('/about', function(req, res) {
-    res.sendFile(path.join(__dirname, 'about.html'));
-})
+// app.get('/about', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'about.html'));
+// })
 
 
 
@@ -90,6 +90,13 @@ app.get('/work2', function(req, res) {
 //     res.sendFile(path.join(__dirname, ''));
 // })
 
+app.use(function(err, req, res, next) {    
+  // Do logging and user-friendly error message display    
+  res.sendFile(path.join(__dirname, '404.html'));   
+})
+
+
 app.listen(PORT, function(){
   console.log("App listening on port: " + PORT);
 })
+
