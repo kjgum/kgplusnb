@@ -54,9 +54,9 @@ app.get('/our-timeline', function(req, res) {
 //     res.sendFile(path.join(__dirname, 'honeymoon.html'));
 // })
 
-// app.get('/gallery', function(req, res) {
-//     res.sendFile(path.join(__dirname, 'our-gallery.html'));
-// })
+app.get('/gallery', function(req, res) {
+    res.sendFile(path.join(__dirname, 'our-gallery.html'));
+})
 
 // app.get('/weekend-adjenda', function(req, res) {
 //     res.sendFile(path.join(__dirname, 'weekend-adjenda.html'));
