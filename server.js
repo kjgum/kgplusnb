@@ -50,6 +50,18 @@ app.get('/our-timeline', function(req, res) {
     res.sendFile(path.join(__dirname, 'our-timeline.html'));
 })
 
+// app.get('/honeymoon', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'honeymoon.html'));
+// })
+
+// app.get('/gallery', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'our-gallery.html'));
+// })
+
+// app.get('/weekend-adjenda', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'weekend-adjenda.html'));
+// })
+
 // app.get('/rsvp', function(req, res) {
 //     res.sendFile(path.join(__dirname, 'rsvp.html'));
 // })
@@ -58,37 +70,6 @@ app.get('/our-timeline', function(req, res) {
 //     res.sendFile(path.join(__dirname, 'about.html'));
 // })
 
-
-
-
-app.get('/about', function(req, res) {
-    res.sendFile(path.join(__dirname, 'about.html'));
-})
-
-app.get('/blog', function(req, res) {
-    res.sendFile(path.join(__dirname, 'blog.html'));
-})
-
-app.get('/services', function(req, res) {
-    res.sendFile(path.join(__dirname, 'services.html'));
-})
-
-app.get('/contact', function(req, res) {
-    res.sendFile(path.join(__dirname, 'contact.html'));
-})
-
-app.get('/work1', function(req, res) {
-    res.sendFile(path.join(__dirname, 'work.html'));
-})
-
-app.get('/work2', function(req, res) {
-    res.sendFile(path.join(__dirname, 'work-single.html'));
-})
-
-
-// app.get('/resume', function(req, res) {
-//     res.sendFile(path.join(__dirname, ''));
-// })
 
 app.use(function(err, req, res, next) {    
   // Do logging and user-friendly error message display    
