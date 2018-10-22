@@ -17,6 +17,8 @@ body {
   font-weight: 400;
   background: #fff;
   color: gray;
+  overflow-y: scroll;
+overflow-x: hidden;
 }
 
 body.menu-show {
@@ -646,7 +648,7 @@ header .colorlib-navbar-brand .colorlib-logo:active, header .colorlib-navbar-bra
 .about-flex .col-half {
   width: 50%;
   display: block;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .about-flex .about-img {
